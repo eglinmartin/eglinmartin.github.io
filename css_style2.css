@@ -1,0 +1,223 @@
+
+/* Render the body right up to the edges of the browser window */
+body {
+	margin: 0px;
+}
+
+
+
+
+
+/* Create a full-page 'container' for all the elements inside the page */
+.container {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+	background-color: black;
+	margin-top: 0px;
+}
+
+
+
+
+
+/* Sidebar (on the left of the container) */
+.sidebar {
+    height: 100vh;
+	width: calc(16% + 150px);
+    overflow: auto;
+	background-color: #A0C2CF;
+	margin-top: 0px;
+	float: left;
+	box-shadow: 10px 5px 15px 0px rgba(0,0,0,0.4);
+	position:relative; 
+	z-index: 2;
+}
+
+/* Sidebar logo */
+.sidebar img {
+	width: 90%;
+	margin: 5%;
+}
+
+/* Sidebar buttons */
+.sidebar button {
+	width: 80%;
+	height: 64px;
+	margin-left: 10%;
+	margin-bottom: 25px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 32px;
+	color: #85BDA6;
+	text-shadow: 2px 2px #266C64;
+	text-align: left;
+	padding-left: 16px;
+	background-color: #3BA99C;
+	border: 0px;
+	box-shadow: inset 10px 10px 13px 0px rgba(0,0,0,0.4);
+
+}
+
+/* Sidebar button (when mouse hovering) */
+.sidebar button:hover{
+	background-color: #266C64;
+}
+
+
+/* Sidebar button hyperlink */
+.sidebar a {
+	display:block;
+	text-decoration: none;
+	color: #85BDA6;
+}
+
+.sidebar p {
+	margin: 5%;
+	color: #223B44;
+	font-family: 'Montserrat', sans-serif;
+	font-size: calc(1.3vw-2px);
+	text-align: justify;
+	margin-top: 5px;
+}
+
+
+
+/* Header (on the top-right of the container) */
+.header {
+	z-index: 2;
+    height: 15vh;
+    width: calc(84% - 150px);
+    overflow: hidden;
+	background-color: #6A9FB4;
+	margin-top: 0px;
+	float: right;
+	box-shadow: 5px 10px 15px 0px rgba(0,0,0,0.4);
+	position:relative; 
+	z-index: 1;
+}
+
+/* Page title */
+.header h1 {
+	text-align: center;
+	line-height: 20px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 3vw;
+	color: #DBE9EE;
+	text-shadow: 4px 4px #0B3246;
+	padding-top: 3vh;
+}	
+
+
+
+
+
+/* Content (on the bottom-right of the container */
+.content {
+	z-index: 1;
+    height: 85vh;
+    width: calc(84% - 150px);
+    overflow: auto;
+	background-color: #C0D6DF;
+	margin-top: 0px;
+	float: right;
+	position:relative; 
+	z-index: 0;
+}
+
+/* Content subheading */
+.content h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.8vw;
+	color: #3E6A7A;
+	text-align: left;
+	margin-left: 3%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+/* Content paragraph */
+.content p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.9vw;
+	color: #3E6A7A;
+	text-align: justify;
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-bottom: 0%;
+}
+
+.content table {
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 5%;
+	box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.4);
+	border: 0px;
+	background: #DBE9EE;
+}
+
+.content tr {
+	width: 50%;
+	background: #DBE9EE;
+	border: 0px;
+}
+
+.content td{
+	background: #DBE9EE;
+	border: 0px;
+	width: 70%;
+}
+
+/* Paragraph hyperlink */
+.content a {
+	text-decoration: none;
+	color: white;
+}
+
+/* Content image box (container) */
+.content .image-box {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Image inside image box */
+.content .image-box img {
+    max-width: 110%;
+    transition: all 0.3s;
+    display: block;
+	width: 100%;
+    transform: scale(1);
+}
+
+/* Image inside image box (grows on mouse hover */
+.content .image-box:hover img {
+    transform: scale(1.1);
+}
+
+/* Map popup - background */
+.leaflet-popup-content-wrapper {
+	background: #8FCB9B;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.mypopup.leaflet-popup-tip {
+    color: #8FCB9B;
+}
+
+/* Map popup - heading  */
+.leaflet-popup-content-wrapper h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	color: #19381F;
+	text-shadow: 1px 1px #3E885B;
+}
+
+/* Map popup - content  */
+.leaflet-popup-content-wrapper p {
+	color: #19381F;
+}
+
+
+
+
