@@ -1,0 +1,64 @@
+body {
+	background-color: white;
+	color: black;
+	font-size: small;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+h1 {
+	width: 100%;
+	height: 100px;
+	background-color: #3399ff;
+	margin: 0px;
+	
+	color: white;
+	line-height: 100px;
+	text-align: center;
+	text-shadow: 3px 3px #004d99;
+	font-size: 300%;
+}
+
+.gmap {
+	float: left;
+}
+
+.infowindow{
+	color: #004d99;
+}
+
+.infowindow h2{
+	background-color: #3399ff;
+	color: white;
+	text-shadow: 3px 3px #004d99;
+}
+
+.body_head table{
+	width: 100%;
+	height: 50px;
+	background-color: #3399ff;
+	
+	color: white;
+	line-height: 70px;
+	text-align: center;
+	text-shadow: 3px 3px #004d99;
+	font-size: 200%;
+}
+
+.body_head td{
+	width: 100%;
+	height: 50px;
+	background-color: #ffffff;
+	
+	color: black;
+	line-height: 70px;
+	text-align: center;
+	text-shadow: 0px 0px #ffffff;
+	font-size: 60%;
+}
+
+.body_head p{
+	line-height: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
